@@ -9,6 +9,6 @@
   },
   "scripts": {
     "build": "shadow-cljs release cli",
-    "run": "yarn run electron clover.js"
+    "clover": "yarn run electron --enable-transparent-visuals --disable-gpu clover.js "
   }
 }
