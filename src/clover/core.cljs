@@ -13,7 +13,7 @@
   (reset! main-window
           (browser-window
             {:transparent     true
-             :backgroundColor "#00ffffff"
+             :backgroundColor "#00000000"
              :titleBarStyle   "hidden"
              :frame           false
              :thickFrame      false
@@ -21,9 +21,13 @@
              :title           (str "clover/" (or title "no-title"))
 
              :webPreferences
-             {:enableRemoteModule         true
-              :nodeIntegrationInSubFrames true
-              :nodeIntegration            true}}))
+             {:enableRemoteModule         false
+              :nodeIntegrationInSubFrames false
+              :nodeIntegration            false
+              ;; :enableRemoteModule         true
+              ;; :nodeIntegrationInSubFrames true
+              ;; :nodeIntegration            true
+              }}))
   ;; Path is relative to the compiled js file (main.js in our case)
   (.loadURL ^js @main-window url)
 
@@ -38,7 +42,7 @@
     (.on app "window-all-closed" #(.quit app))
     (.on app "ready"
          (fn []
-           (let [pause 300 #_ 0]
+           (let [pause 1000]
              (println "app ready")
              (js/setTimeout
                #(init-browser {:title title :url url})
