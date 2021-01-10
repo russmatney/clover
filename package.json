@@ -1,0 +1,14 @@
+{
+  "name": "clover",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Russell Matney <russell.matney@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^11.1.1"
+  },
+  "scripts": {
+    "build": "shadow-cljs release cli",
+    "run": "yarn run electron clover.js"
+  }
+}
