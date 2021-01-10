@@ -1,0 +1,5 @@
+#+TITLE: Todo
+
+* [ ] support 'stick to wall' or 'corner'
+* [ ] support drag/drop movement of the whole window
+(i.e. click+drag like a floating titlebar-ed window)
