@@ -8,13 +8,18 @@ Initially implemented to support a floating transparent webview.
 * Build and Run
 To build the node-script:
 
-#+BEGIN_SRC clojure
+#+BEGIN_SRC sh
 shadow-cljs release cli
 #+END_SRC
 
 This builds a ~clover.js~ in the root of the directory, which can then be
 passed to electron via:
 
-#+begin_src clojure
-yarn electron clojure.js
+#+begin_src sh
+yarn run electron clojure.js <url> <app-title>
 #+end_src
+
+~<url>~ the page to load from electron.
+
+~<app-title>~ will be set in the title as ~clover/<app-title>~, which can be
+used as a hook from your window manager.

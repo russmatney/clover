@@ -30,14 +30,16 @@
   (println "main-window reset" opts)
   (.on ^js @main-window "closed" #(reset! main-window nil)))
 
-(defn main [title url & args]
-  (println "Starting clover frame with params" title url args)
+(defn main [& args]
+  (println "Starting clover frame with params:" args)
+  (let [url   (some-> args first)
+        title (nth args 2 nil)]
 
-  (.on app "window-all-closed" #(.quit app))
-  (.on app "ready"
-       (fn []
-         (let [pause 3000 #_ 0]
-           (println "app ready")
-           (js/setTimeout
-             #(init-browser {:title title :url url})
-             pause)))))
+    (.on app "window-all-closed" #(.quit app))
+    (.on app "ready"
+         (fn []
+           (let [pause 300 #_ 0]
+             (println "app ready")
+             (js/setTimeout
+               #(init-browser {:title title :url url})
+               pause))))))
