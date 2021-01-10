@@ -1,2 +1,0 @@
-(ns clover.core)
-

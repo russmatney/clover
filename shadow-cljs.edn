@@ -1,0 +1,12 @@
+{:deps {:aliases [:nrepl :cljs]}
+
+ :nrepl {:port 4201
+         :middleware
+         [cider-nrepl.plugin/middleware
+          refactor-nrepl.middleware/wrap-refactor]}
+
+ :builds
+ {:cli
+  {:target    :node-script
+   :output-to "clover.js"
+   :main      clover.core/main}}}
