@@ -1,0 +1,6 @@
+#+TITLE: Clover
+
+Clover is a Clojure-based "Overlay" tool, intended to support transparent web
+overlays while streaming to Twitch.
+
+Initially implemented to support a floating transparent webview.
