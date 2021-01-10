@@ -27,6 +27,8 @@ used as a hook from your window manager.
 * Develop locally
 ~cider-jack-in-cljs~ and select ~:cli~ as the build to get things started.
 
+Alternatively, run ~shadow-cljs watch cli~, and connect from your editor.
+
 Once there is a build, you can run ~yrun clover <some-title> <some-url>~ on the
 command line to start up a JS runtime, which is required before you can start
 evaluating commands.

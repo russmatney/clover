@@ -17,3 +17,4 @@ yarn-error.log*
 .shadow-cljs/
 
 clover.js
+clover-release.js

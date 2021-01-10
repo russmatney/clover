@@ -9,4 +9,6 @@
  {:cli
   {:target    :node-script
    :output-to "clover.js"
-   :main      clover.core/main}}}
+   :main      clover.core/main
+   :release   {:output-to        "clover-release.js"
+               :compiler-options {:optimizations :simple}}}}}
