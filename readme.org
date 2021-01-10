@@ -23,3 +23,10 @@ yarn run electron clojure.js <url> <app-title>
 
 ~<app-title>~ will be set in the title as ~clover/<app-title>~, which can be
 used as a hook from your window manager.
+
+* Develop locally
+~cider-jack-in-cljs~ and select ~:cli~ as the build to get things started.
+
+Once there is a build, you can run ~yrun clover <some-title> <some-url>~ on the
+command line to start up a JS runtime, which is required before you can start
+evaluating commands.
