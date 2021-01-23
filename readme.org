@@ -9,7 +9,8 @@ Initially implemented to support a floating transparent webview.
 To build the node-script:
 
 #+BEGIN_SRC sh
-shadow-cljs release cli
+yarn install # yin
+shadow-cljs build cli
 #+END_SRC
 
 This builds a ~clover.js~ in the root of the directory, which can then be
