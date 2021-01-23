@@ -10,7 +10,7 @@ To build the node-script:
 
 #+BEGIN_SRC sh
 yarn install # yin
-shadow-cljs build cli
+shadow-cljs watch cli
 #+END_SRC
 
 This builds a ~clover.js~ in the root of the directory, which can then be
