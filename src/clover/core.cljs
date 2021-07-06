@@ -16,7 +16,7 @@
              :type           "splash"
              :title          title
              :webPreferences {:enableRemoteModule false
-                              :nodeIntegration    false}}))
+                              :nodeIntegration    true}}))
   (.loadURL ^js @main-window url)
   (.on ^js @main-window "closed" #(reset! main-window nil)))
 
@@ -28,7 +28,7 @@
                                (.startsWith s "--")
                                (= s "clover.js")))))
         url   (some-> args first)
-        title (nth args 2 "no-title")]
+        title (or (second args) "no-title")]
     (.on app "window-all-closed" #(.quit app))
     (.on app "ready"
          (fn []

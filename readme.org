@@ -17,7 +17,7 @@ This builds a ~clover.js~ in the root of the directory, which can then be
 passed to electron via:
 
 #+begin_src sh
-yarn run electron clojure.js <url> <app-title>
+yarn run electron clover.js <url> <app-title>
 #+end_src
 
 ~<url>~ the page to load from electron.
