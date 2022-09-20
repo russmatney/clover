@@ -1,5 +1,11 @@
 #+TITLE: Clover
 
+* Deprecated
+
+I've replaced this electron-based approach with a Tauri-based one in [[https://github.com/russmatney/clawe][russmatney/clawe]].
+
+* Clover
+
 Clover is a Clojurescript-based "Overlay" tool, intended to support transparent web
 overlays while streaming to Twitch.
 
