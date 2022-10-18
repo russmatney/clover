@@ -2,7 +2,12 @@
 
 * Deprecated
 
-I've replaced this electron-based approach with a Tauri-based one in [[https://github.com/russmatney/clawe][russmatney/clawe]].
+I've replaced this electron-based approach with a Tauri-based one in [[https://github.com/russmatney/clove][russmatney/clove]].
+
+Discussed here:
+
+- [[https://danger.russmatney.com/daily/2022-10-18.html][2022-10-18 daily note]]
+- [[https://danger.russmatney.com/note/tauri_as_a_simple_native_web_view.html][Tauri as a simple native webview]]
 
 * Clover
 
